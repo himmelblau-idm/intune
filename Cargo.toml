@@ -18,4 +18,5 @@ path = "src/lib.rs"
 tpm = ["kanidm-hsm-crypto/tpm"]
 
 [dependencies]
-kanidm-hsm-crypto = { path = "../hsm-crypto" }
+kanidm-hsm-crypto = { path = "../hsm-crypto", features = ["msextensions"] }
+openssl = "^0.10.55"

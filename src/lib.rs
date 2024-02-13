@@ -12,3 +12,7 @@
 #![feature(doc_cfg)]
 #![doc = include_str!("../README.md")]
 
+pub mod error;
+
+pub mod client;
+pub use client::*;
